@@ -1,7 +1,10 @@
 __<h1>ATM Machine</h1>__
 <hr>
 <h4>Description</h4>
-The code in this repository provides the basic functionality for an ATM Machine. `Account` objects can accept parameters for an account holder's first and last names, and can accept a custom initial balance for the account. The default initial balance is `$0.00`. There is a daily withdrawal limit of $300 that resets at midnight each day.
+The code in this repository provides the basic functionality for an ATM Machine.
+\`Account\` objects can accept parameters for an account holder's first and last names, and can accept a custom initial balance for the account.
+The default initial balance is `$0.00`.
+There is a daily withdrawal limit of `$300.00` that resets at midnight each day.
 <hr>
 
 <h4>Class Methods</h4>

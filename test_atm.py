@@ -1,16 +1,14 @@
-# Import atm script
-# Import unittest
+import unittest
+from atm import Account
 
 
 # Test Class for ATM Account object
+class AccountTest(unittest.TestCase):
 
     # Set up test data
-        # Account 1
-            # Account holder: Sally Smith
-            # Initial starting balance of $444.44
-        # Account 2
-            # Account holder: Sam Smith
-            # Initial starting balance of $0.00 (default amount)
+    def setUp(self):
+        self.account1 = Account('Sally', 'Smith', 444.44)
+        self.account2 = Account('Sam', 'Smith') # Default initial balance of 0.00
 
     # test_atm_account_return_account_holders_first_name
 
@@ -79,3 +77,7 @@
     # test_atm_account_transfer_to_another_account_with_positive_remaining_balance
 
     # test_atm_account_transfer_to_another_account_would_result_in_negative_remaining_balance_and_raises_exception
+
+
+if __name__=='__main__':
+    unittest.main()
